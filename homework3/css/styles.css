@@ -29,6 +29,7 @@ body{
     min-height: 900px;
     margin: 0 auto;
     padding: 50px 48px 0 46px;
+    position: relative;
 }
 
 header{
@@ -159,10 +160,14 @@ section {display: block;}
 }
 
 footer{
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    /*height: 100px;*/
+    width: 966px;
+    bottom: 60px;
+
+
+    /*position: fixed;
+    bottom: 0;*/
 }
 
 .footer-content{
@@ -206,3 +211,74 @@ footer{
     padding-top: 10px;
 }
 
+/*
+
+
+h1{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.photo{
+    width: 138px;
+    height: 132px;
+    margin: 0 auto;
+}
+
+a{
+    display: block;
+}
+
+.from,
+.motivation,
+.contacts{
+    border-bottom: 1px solid black;
+    width: 411px;
+    margin: 0 auto;
+}
+
+.from{
+    height: 38px;
+    padding-top: 10px;
+}
+
+.motivation{
+    height: 143px;
+    padding-top: 25px;
+}
+
+.contacts{
+    height: 147px;
+    padding-top: 20px;
+}
+
+ul{
+    list-style-type: disc;
+    margin-top: 27px;
+    margin-left: 37px;
+    line-height: 1.5;
+}
+
+.from p,
+.motivation p,
+.contacts p{
+    margin-left: 12px;
+}
+
+.contacts p,
+.feedback p{
+    line-height: 1.6;
+}
+
+.profile {
+    margin-top: 21px;
+}
+
+.feedback{
+    margin-top: 20px;
+    margin-left: 62px;
+}
+
+*/
