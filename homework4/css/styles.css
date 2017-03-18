@@ -1,5 +1,18 @@
 @import url(reset.css);
 
+/*
+clearfix{
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+}
+*/
+
 
 /*!!!!!!!!!
 

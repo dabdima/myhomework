@@ -1,0 +1,42 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 5px;
+}
+
+.sprite-b_flag {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -5px;
+}
+
+.sprite-i_flag {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -57px;
+}
+
+.sprite-m_flag {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -109px;
+}
+
+.sprite-n_flag {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -161px;
+}
+
+.sprite-s_flag {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -213px;
+}
+
+.sprite-t_flag {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -265px;
+}

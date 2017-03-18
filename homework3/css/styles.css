@@ -38,6 +38,10 @@ body{
     font-style: normal;
 }
 
+html, body{
+    height: 100%;
+}
+
 .clear {clear: both;}
 
 #wraper{
@@ -64,15 +68,20 @@ header{
 
 .menu ul li {
     float: left;
-    margin-right: 40px;
+    /*margin-right: 1px;*/
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
+.menu ul li:hover {
+    border-left: 1px solid #848484;
+    border-right: 1px solid #848484;
+}
 .menu ul li .active,
 .menu ul li:hover a{
     background: url(../images/header-menu-bg-active.png) repeat-x;
-    border-left: 1px solid #848484;
-    border-right: 1px solid #848484;
-    padding: 9px 22px;
+
+    padding: 9px 30px;
 
 }
 
@@ -80,7 +89,7 @@ header{
     color: #fff;
     font-size: 16px;
     display: block;
-    padding: 9px 23px;
+    padding: 9px 30px;
 }
 
 a{
@@ -180,15 +189,17 @@ footer{
     position: absolute;
     width: 966px;
     bottom: 60px;
+    height: 40px;
+    background-color: #e2e2e2;
 }
 
-.footer-content{
+/*.footer-content{
     background-color: #e2e2e2;
     width: 966px;
     height: 40px;
-    margin: 0 auto;
+    !*margin: 0 auto;*!
 
-}
+}*/
 
 .footer-menu{
     color: #2c2c2c;
