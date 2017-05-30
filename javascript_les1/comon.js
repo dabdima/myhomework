@@ -59,7 +59,7 @@ alert("Your result is: " + result);
 // function for num1 and num2 validation
 function validateNum(a, message) {
     do {
-        if ((a === undefined) || (isNaN(Number(a))) || (a === "") || (a === null) || (a.indexOf(" ") !== -1)) {
+        if (!isNumeric(a)) {
             alert("Incorrect data! Try once more");
             a = prompt(message, "");
             err = 1;
@@ -78,3 +78,8 @@ function validateNum(a, message) {
     return a;
 }
 
+
+//number validation
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
