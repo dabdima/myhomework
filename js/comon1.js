@@ -46,14 +46,14 @@ console.log(arr1);
 
 console.log("задача №3:");//========================================
 
-function testFunc(arg1, arg2, arg3, arg4) {
-    if (arg4 !== undefined) {
-        console.log(arg1 + arg2 + arg3 + arg4);
+function testFunc() {
+    if (arguments[3] !== undefined) {
+        console.log(arguments[0] + arguments[1] + arguments[2] + arguments[3]);
     } else
-    if (arg3 !== undefined) {
-        console.log(arg1 * arg2 * arg3);
+    if (arguments[2] !== undefined) {
+        console.log(arguments[0] * arguments[1] * arguments[2]);
     } else
-        console.log(Math.pow(arg1, arg2));
+        console.log(Math.pow(arguments[0], arguments[1]));
 }
 
 console.log("пример:");
