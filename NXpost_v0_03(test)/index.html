@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/reset.css" type="text/css" rel="stylesheet" />
+	<link href="css/comon.css" type="text/css" rel="stylesheet" />
+	<link href="css/thread.css" type="text/css" rel="stylesheet" />
+	<link href="libs/bouncy_navigation/bouncy.css" type="text/css" rel="stylesheet" />
+	<link href="libs/sideToggle-master/style.css" type="text/css" rel="stylesheet" />
+	
+	
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Lóremus</title>
+		
+		<link rel="stylesheet" href="css/select_form_style.css" />
+		<link rel="stylesheet" href="css/animation.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<!-- <script type="text/javascript" src="js/angular.js"></script> -->
+		
+		
+		
+		
+		
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="wraper">
+			
+		<div id="left-container">
+		
+			<div id="logo-container">
+			<div id="logo-container-1">
+				<div id="logo">
+					<img src="img/logo_img.png" alt="logo" />
+					<p>Lóremus<br/>
+					<span style="font-size: 20px; letter-spacing: 2px;">NXPost</span></p>
+				</div>
+				</div>
+			</div>
+		
+			<div class="left-column-setting">
+				<div class="left-column-setting-div">
+					<select name="cnc-type" size="1" id="cnc-type">
+						<!-- <option value="template">-</option>
+						<option value="template">-</option>
+						<option value="template">-</option>
+						<option value="template">-</option>
+						<option value="template">-</option> -->
+						<!-- <option value="fan">FANUC</option>
+						<option value="sin">SINUMERIK</option>
+						<option value="fan">FANUC</option> -->
+					</select>
+				</div>
+				<div class="left-column-setting-div " id="cnc-machine-set1-div">
+					<select name="cnc-machine-set1" size="1" id="cnc-machine-set1">
+						<option value="SBL-500">SBL-500</option>
+						<option value="SE-820">SE-820</option>
+						<option value="DF2_3_CNC_H_600">DF2_3_CNC_H_600</option>
+						<option value="-">be continued...</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+					</select>
+				</div>
+				<div class="left-column-setting-div " id="cnc-machine-set2-div">
+					<select name="cnc-machine-set2" size="1" id="cnc-machine-set2">
+						<option value="Lynx300M">Lynx300M</option>
+						<option value="Puma MX2600">Puma MX2600 (not ready)</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+					</select>
+				</div>
+				<div class="left-column-setting-div " id="cnc-machine-set3-div">
+					<select name="cnc-machine-set3" size="1" id="cnc-machine-set3">
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+					</select>
+				</div>
+				<div class="left-column-setting-div " id="cnc-machine-set4-div">
+					<select name="cnc-machine-set4" size="1" id="cnc-machine-set4">
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+					</select>
+				</div>
+				<div class="left-column-setting-div " id="cnc-machine-set5-div">
+					<select name="cnc-machine-set5" size="1" id="cnc-machine-set5">
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+						<option value="-">-</option>
+					</select>
+				</div>
+				
+				<div class="left-column-setting-div " id="starting-block">
+					<h3>Starting block #</h3>
+					<input id="starting-block-input" class="inp-bl-st1 bl-sz2" name="starting-block" type="text" placeholder="9001" />
+				</div>
+				<div class="left-column-setting-div " id="spindle-speed">
+					<h3>Spindle speed data</h3>
+					<div id="checkBox01-div">
+						<input id="checkBox01" type="checkbox" name="lorem_name" /><label for="checkBox01">by headline context</label><br/><br/>
+					</div>
+					<input id="spindle-speed-input" class="inp-bl-st1 bl-sz2" name="spindle-speed" type="text" value="120" placeholder="120"/>
+					<p id="unit">rpm</p>
+						<div id="payt1-container">
+							<p class="payt1-choice">G97</p>
+							<input type="checkbox" id="payt1"/><label for="payt1"></label>
+							<p class="payt1-choice ">G96</p>
+							<!-- <div class="clear"></div> -->
+							<p class="payt1-choice ">M4</p>
+							<input type="checkbox" id="payt2"/><label for="payt2"></label>
+							<p class="payt1-choice ">M3</p>
+							<img src="img/q.png" alt="q" />
+						</div>
+				</div>
+				<div class="left-column-setting-div " id="tool-parameters">
+					<h3>Tool parameters</h3>
+					<!-- <div class="tool-parameters-div">
+						<p class="tool-parameters" id="tool-parameters1">R</p>
+						<input id="radius-input" name="radius" type="text" value=""></input>
+					</div> -->
+					<div class="tool-parameters-div">
+						<p class="tool-parameters" id="tool-parameters2">a</p>
+						<input id="a-input" class="inp-bl-st1 bl-sz1" name="a" type="text" value="" />
+					</div>
+					<div class="tool-parameters-div">
+						<p class="tool-parameters" id="tool-parameters3">b</p>
+						<input id="b-input" class="inp-bl-st1 bl-sz1" name="b" type="text" value="" />
+					</div>
+					<div class="tool-parameters-div">
+						<p class="tool-parameters" id="tool-parameters4">j</p>
+						<input id="j-input" class="inp-bl-st1 bl-sz1" name="j" type="text" value="" maxlength = "1" />
+					</div>
+					<div class="tool-parameters-div">
+						<p class="tool-parameters" id="tool-parameters5">D<span style="font-size: 12px;">1</span></p>
+						<input id="d-input" class="inp-bl-st1 bl-sz1" name="d" type="text" value="" placeholder = "1" maxlength = "1" />
+					</div>
+					<div class="tool-parameters-div">
+						<p class="tool-parameters" id="tool-parameters6">D<span style="font-size: 12px;">2</span></p>
+						<input id="d2-input" class="inp-bl-st1 bl-sz1" name="d2" type="text" value="" placeholder = "0" maxlength = "1" />
+					</div>
+					
+				</div>
+			</div>
+		</div>
+			
+			
+		<div id="middle-container-thread" class="passive-cnc-set">
+			
+			<div class="tool-parameters-div thread-div-areas">
+				<p >Prepared diam.</p>
+				<input class="inp-bl-st1 thread-input" id="pr-input" name="pr" type="text" title="Сюда наружный диаметр" placeholder="(mm)" />
+			</div>
+			<div class="tool-parameters-div thread-div-areas">
+				<p >Effective diam.</p>
+				<input class="inp-bl-st1 thread-input" id="effd-input" name="effd-input" type="text" title="Сюда средний диаметр (но можно и наоборот. Без разницы)" placeholder="(mm)" />
+			</div>
+			<div class="tool-parameters-div thread-div-areas">
+				<p  >Pitch</p>
+				<input  class="inp-bl-st1 thread-input" id="p-input" name="p-input" type="text" title="Шаг!" placeholder="(mm)" />
+			</div>
+			<br/>
+			<div class="tool-parameters-div thread-div-areas" style="clear:both;">
+				<p  >Depth (mm)</p>
+				<textarea class="inp-bl-st1 thread-input" id="depth-input" title="глубина резьбы" ></textarea>
+			</div>
+			
+			
+			
+			<!-- <div class="btn-container to-rigth"> -->
+				<div id="thread-res" title="тут будет красивая картинка">get result</div>
+			<!-- </div> -->
+			
+			
+			
+			
+		</div>
+			
+		<div id="middle-container">
+			<!-- <form > -->
+				
+				<!-- <input class="inputArea" id="stringInputArea"type="text" value="Enter your string here :)" size="80" /> -->
+				<textarea class="inputArea" id="stringInputArea" placeholder="Enter your NX CL-DATA here" ></textarea>
+				<!-- <div class="inputArea-incolor passive-cnc-set" id="stringInputArea-incolor" contenteditable></div> -->
+				<!-- <div id="inputBtn" onclick="console.log(shortened(56.123));console.log(shortened(56.120));console.log(shortened(56.100));console.log(shortened(56.000));console.log(shortened(56.020));console.log(shortened(56.108));"></div> -->
+				<div id="inputBtn"></div>
+				<!-- <input id="inputBtn" type="button" value="transform" onclick="getResult();"> -->
+				<!-- <p>your result:</p> -->
+				<textarea class="inputArea" id="resultArea" placeholder="Click TRANSFORM to generate NC" ></textarea>
+				<div class="inputArea-incolor passive-cnc-set" id="resultArea-incolor" contenteditable></div>
+			
+				
+			<!-- </form> -->
+		</div>
+			
+			
+			
+		<div id="right-container">
+			<div id="alert-block-container">
+				<div id="alert-block" class="inp-bl-st1 bl-sz2 passive-cnc-set"></div>
+			</div>
+			<div class="btn-container"><div id="copy-cl-btn"></div></div>
+			<div class="btn-container"><div id="erase-cl-btn"></div></div>
+			<div class="btn-container" id="empty"></div>
+			<!-- <br/><br/><br/> -->
+			<div class="btn-container to-rigth"><div id="colormodeBtn"></div></div>
+			<div class="btn-container to-rigth"><div id="copy-nc-btn"></div></div>
+			
+			<!-- <div class="btn-container to-rigth">
+				<div id="thread-btn" title="тут будет красивая картинка :Р">thread</div>
+			</div> -->
+			
+			
+			<div class="clear"></div>
+
+			
+		</div>
+		
+		
+		<div class="payt1-choice" id="about"><p>About Lóremus</p></div>
+		<div class="payt1-choice moveright" id="about-information"><p><span style="">Dear User,</span><br/><br/>
+			<span style="color: #C3D0F4; font-weight:bold;">Lóremus</span> is the postprocessing application designed for NX-CAM turning projects; made by NC programmer for NC programmers.
+			<br/><br/>I hope You enjoy using it and don't have any bugs in Your NC.
+			<br/><br/> However, if You notice any problems <span style="text-decoration:line-through;"> or just can't help but express delight</span>
+			or have any questions, feel free to ask me. I'm always open for You:) 
+			<br/><br/>
+			Take care,<br/>Dima<br/><!-- dmytrobarannik89@gmail.com -->
+			
+			</p>
+		</div>
+		
+		
+		<div class="clear"></div>
+		
+		
+		<div id="render-container">
+			<div id="blocks-list">
+			</div>
+			<div id="render-envelope" >
+				<svg id="renderSvg">
+				</svg>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<div id="sideMenu" class="btn-container">
+	<div id="sideMenuClosed"></div>
+</div>
+
+<div id="sideMenuContainer" class="inp-bl-st1">
+	<h2>modules</h2>
+		<p id="NXpost">Postrocessor</p>
+		<p id="render-tool-path">Render tPath</p>
+		<p>(some module)</p>
+
+	<h2>plugins</h2>
+
+		<p id="get-thread">get thread depth</p>
+		<p>some plugin</p>
+
+</div>
+
+<!-- <div id="logo" class='colorchange'>
+  toggling
+  <span>things is oddly satisfying</span>
+</div> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div id="bouncy-button">
+	
+		<!-- <section class="cd-section">
+		<a class="cd-bouncy-nav-trigger" href="#0">Browse categories</a>
+		</section>  -->
+
+		<div class="cd-bouncy-nav-modal">
+			<nav>
+				<ul class="cd-bouncy-nav">
+					<li><a href="#0">Category 1</a></li>
+					<li><a href="#0">Category 2</a></li>
+					<li><a href="#0">Category 3</a></li>
+					<li><a href="#0">Category 4</a></li>
+					<li><a href="#0">Category 5</a></li>
+					<li><a href="#0">Category 6</a></li>
+					
+				</ul>
+			</nav>
+			
+			<a href="#0" class="cd-close">Close modal</a>
+		</div> 
+	</div> 
+	
+	
+	
+	
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+	<script src="js/comon.js" type="text/javascript"></script>
+
+	
+	<script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				/* select style */
+				var params = {
+					changedEl: "select",
+					visRows: 5,
+					scrollArrows: true
+				}
+				cuSel(params);
+			});
+		</script>
+	
+	<script type="text/javascript" src="js/cnc_list_setting.js"></script>
+	
+	<script src="js/toolpathrendering.js" type="text/javascript"></script>
+	<script src="js/thread.js" type="text/javascript"></script>
+	<script src="libs/bouncy_navigation/bouncy.js"></script>
+	
+	<script src='libs/sideToggle-master/sideToggleExtended.js'></script>
+    <script src="libs/sideToggle-master/index.js"></script>
+	<!-- <pre><code id='sourceCode'>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		  $('#sideMenu').sideToggle({
+			moving: '#sideMenuContainer',
+			direction: 'right'
+		  });
+		});
+  </script></code></pre> -->
+		
+  </body>
+</html>

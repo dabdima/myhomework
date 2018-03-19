@@ -1,0 +1,59 @@
+﻿#middle-container-thread {
+	min-width: 600px;
+	/* min-height: 800px; */
+	width: 50%;
+	text-align: left;
+	font-size: 24px;
+	font: Arial, Verdana, Tahoma, sans-serif, 'Times New Roman';
+	margin-top:198px ;
+	padding-left: 100px;
+	text-shadow: rgba(255, 255, 255, .3) 1px 1px;
+	box-sizing: border-box;
+}
+
+
+#thread-btn {
+	/* background-image: url(../img/color_mode_btn.png); */
+	transition: .3s;
+	width: 70px;
+	height: 36px;
+	background-color:#6F859D;
+	cursor: pointer;
+	box-shadow:2px 1px 7px 3px #363E48;
+	border: 1px solid #565B68;
+	border-radius: 4px;
+	position: relative;
+
+}
+
+#thread-res{
+	background-image: url(../img/color_mode_btn1.png) no-repeat;
+	transition: .3s;
+	width: 162px;
+	height: 36px;
+	background-color:#6F859D;
+	cursor: pointer;
+	box-shadow:2px 1px 7px 3px #363E48;
+	border: 1px solid #565B68;
+	border-radius: 4px;
+	position: relative;
+	clear: both;
+
+}
+
+#thread-btn:hover,
+ #thread-res:hover{
+	background-color:#4C7EB0;
+	box-shadow:2px 1px 7px 3px gray;
+}
+
+.thread-div-areas {
+	height: 100px;
+	float: left;
+	margin-right: 20px;
+	/* line-height: 100px; */
+}
+
+.thread-input {
+	width: 150px;
+}

@@ -1,0 +1,70 @@
+
+#sideMenu {
+	width: 36px;
+	height: 36px;
+	margin: 0 5px 0 0;
+  text-shadow: 1px 1px 2px #212121;
+  color: #f06060;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+#sideMenuClosed {
+	transition: .3s;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	border-radius: 3px;
+	background-image: url(menu_btn.png);
+}
+#sideMenuClosed:hover {
+	box-shadow:1px 1px 3px 1px grey;
+	background-color:#9BCAEF;
+}
+
+
+
+
+#sideMenuContainer {
+	font-family: Ubuntu, Arial, sans-serif;
+  background: #2B3640;
+  text-align: left;
+  height: 85%;
+  padding: 0px;
+  position: fixed;
+  top: 40px;
+  right: -240px;
+  width: 200px;
+  z-index: 4;
+  overflow: auto;
+  
+}
+#sideMenuContainer h2 {
+  color: #9BCAEF;
+  background-color: #1C242A;
+  1C242A
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #40729C ;
+  padding: 10px;
+}
+
+#sideMenuContainer > p {
+	display: block;
+  padding: 5px 10px;
+  text-shadow: 1px 1px 2px grey ;
+}
+#sideMenuContainer > p:hover {
+  padding-left: 3px;
+  background: #4C7EB0;
+  cursor: pointer;
+  -webkit-animation: fadein_color 0.3s; /* Chrome, Safari, Opera */
+		animation: fadein_color 0.3s;
+		-moz-animation: fadein_color 0.3s; /* Fx 5+ */
+		-o-animation: fadein_color 0.3s; /* Opera 12+ */
+}
+
+
+
+
